@@ -1,0 +1,30 @@
+var myVar;
+var scrollTopButton = document.getElementById("scroll-top")
+
+function pageLoader() {
+    myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+    document.getElementById("curtain-left").style.opacity = 0;
+    document.getElementById("curtain-right").style.opacity = 0;
+    document.getElementById("curtain-left").style.transform = "translate(-50vw, 0)";
+    document.getElementById("curtain-right").style.transform = "translate(50vw, 0)";
+    setTimeout(() => { document.getElementById("loader").style.width = 0 }, 1000);
+
+}
+
+function scrollToTop() {
+    window.scrollTo(0, 0);
+}
+
+
+
+// For scrolling
+window.addEventListener('scroll', _ => {
+    if (window.scrollY > 100) {
+        scrollTopButton.style.bottom = "20px"
+    } else {
+        scrollTopButton.style.bottom = "-100px"
+    }
+})

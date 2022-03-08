@@ -63,6 +63,12 @@ body {
 
 }
 
+.card-wrapper a{
+    text-decoration: none;
+
+}
+
+
 .card-wrapper .card-title {
     font-size: 19px;
     font-weight: bold;

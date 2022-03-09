@@ -2,6 +2,10 @@ body {
     background-color: #FDF4DC;
 }
 
+p, ol, li {
+    font-weight: normal;
+}
+
 .article-header {
     text-align: center;
 }

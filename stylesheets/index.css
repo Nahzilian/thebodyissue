@@ -37,14 +37,6 @@ body {
     font-family: 'Cormorant Garamond', serif;
 }
 
-
-
-@media screen and (max-width: 992px) {
-    .custom-card {
-        gap: 10px;
-    }
-}
-
 .name-plate {
     background-color: #EAE5E7;
     color: black;
@@ -65,6 +57,10 @@ body {
 
 .card-wrapper a{
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Cormorant Garamond', serif;
 
 }
 
@@ -102,4 +98,23 @@ body {
     box-shadow: 1px -1px 166px 73px rgba(255,254,211,0.75);
 -webkit-box-shadow: 1px -1px 166px 73px rgba(255,254,211,0.75);
 -moz-box-shadow: 1px -1px 166px 73px rgba(255,254,211,0.75);
+}
+
+.bottom-img {
+    height: 35rem;
+    position: relative;
+}
+
+.bottom-img img {
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .bottom-img img{
+        position: relative;
+    }   
+    .bottom-img {
+        height: 100%;
+    }   
 }

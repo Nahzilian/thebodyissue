@@ -1,7 +1,17 @@
 @font-face {
     font-family: 'Cambria';
-    src: url('Cambria.ttf') format('truetype');
+    src: url('Cambria.woff2') format('woff2'),
+        url('Cambria.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cambria';
+    src: url('Cambria-Bold.woff2') format('woff2'),
+        url('Cambria-Bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }

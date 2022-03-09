@@ -12,7 +12,6 @@ function showPage() {
     document.getElementById("curtain-right").style.transform = "translate(50vw, 0)";
     setTimeout(() => { 
         document.getElementById("loader").style.width = 0
-        document.getElementById("video-light-dot").style.display = 'none'
     }, 1000);
 
 }

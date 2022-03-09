@@ -110,11 +110,18 @@ body {
     bottom: 0;
 }
 
+.credits img {
+    width: 50%;
+}
+
 @media screen and (max-width: 992px) {
     .bottom-img img{
         position: relative;
     }   
     .bottom-img {
         height: 100%;
-    }   
+    }
+    .credits img {
+        width: 100%;
+    }
 }
